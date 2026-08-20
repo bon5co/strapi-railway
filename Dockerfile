@@ -11,7 +11,13 @@ RUN apt-get update \
  && apt-get install -y --no-install-recommends libvips42 util-linux ca-certificates \
  && rm -rf /var/lib/apt/lists/*
 
+# HOST=:: makes node bind the dual-stack wildcard. Railway's private network — which is
+# what the platform's healthcheck and the edge proxy dial — is IPv6-only, so an app bound to
+# 0.0.0.0 starts, logs success, and is never reachable: the deployment sits in DEPLOYING
+# until the healthcheck window expires and the public domain answers 404 "Application not
+# found".
 ENV NODE_ENV=production \
+    HOST=:: \
     STRAPI_TELEMETRY_DISABLED=true \
     STRAPI_DISABLE_UPDATE_NOTIFICATION=true
 WORKDIR /app
