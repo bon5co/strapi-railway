@@ -1,5 +1,9 @@
 # strapi-railway
 
+[![Deploy on Railway](https://railway.com/button.svg)](https://railway.com/deploy/strapi-5-or-just-updated-headless-cms-wh?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
+**Deploy on Railway:** [Strapi 5 template](https://railway.com/deploy/strapi-5-or-just-updated-headless-cms-wh?referralCode=Z1xivh&utm_medium=integration&utm_source=template&utm_campaign=generic)
+
 Wrapper image for deploying [Strapi 5](https://strapi.io) on
 [Railway](https://railway.com), used by the published Railway template.
 
