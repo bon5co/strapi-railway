@@ -27,5 +27,5 @@ jobs:
           context: .
           push: true
           tags: |
-            ghcr.io/bon5co/strapi-railway:5.52.1
+            ghcr.io/bon5co/strapi-railway:5.60.0
             ghcr.io/bon5co/strapi-railway:latest
