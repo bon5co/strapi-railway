@@ -7,7 +7,7 @@
 Wrapper image for deploying [Strapi 5](https://strapi.io) on
 [Railway](https://railway.com), used by the published Railway template.
 
-Image: `ghcr.io/bon5co/strapi-railway:5.52.1`
+Image: `ghcr.io/bon5co/strapi-railway:5.60.0`
 
 ## What this adds over the upstream scaffold
 
@@ -31,7 +31,7 @@ Image: `ghcr.io/bon5co/strapi-railway:5.52.1`
   then drops privileges with `setpriv`.
 - **The admin panel is compiled at image build time**, so a deploy is an image
   pull rather than a Node build on the deployer's build minutes.
-- **Version pinned** to Strapi 5.52.1. Strapi migrates its schema forward on
+- **Version pinned** to Strapi 5.60.0. Strapi migrates its schema forward on
   boot with no downgrade path, so a moving tag makes every redeploy an
   unrequested upgrade.
 - **SQL query logging off and telemetry disabled.**
